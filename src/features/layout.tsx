@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Logo from "../assets/logo.svg?react";
 import EMail from "../assets/e-mail.svg?react";
+import { ScrollToTop } from "./scroll-to-top";
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
@@ -21,6 +22,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </span>
         </div>
       </footer>
+      <ScrollToTop />
     </div>
   );
 }
