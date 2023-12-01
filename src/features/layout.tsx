@@ -4,11 +4,13 @@ import EMail from "../assets/e-mail.svg?react";
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex flex-col items-center">
-      <header className="bg-black-1 h-16 w-full flex items-center justify-center">
+    <div className="flex flex-col h-full">
+      <header className="bg-black-1 py-[14px] h-16 w-full flex items-center justify-center">
         <Logo width={160} height={36} className="text-white" />
       </header>
-      {children}
+
+      <main className="flex-auto w-full">{children}</main>
+
       <footer className="w-full text-gray-2 px-[150px] mt-[60px]">
         <Logo width={84} height={19} className="text-gray-2" />
 

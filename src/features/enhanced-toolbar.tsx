@@ -42,8 +42,8 @@ export function EnhancedToolbar() {
     <ThemeProvider theme={theme}>
       <Toolbar
         sx={{
-          pl: { sm: 2 },
-          pr: { xs: 1, sm: 1 },
+          paddingLeft: 0,
+          paddingRight: 0,
           display: "flex",
           alignItems: "center",
           paddingTop: "16px",

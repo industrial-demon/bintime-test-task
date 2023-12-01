@@ -16,13 +16,11 @@ const queryClient = new QueryClient({
 
 function App() {
   return (
-    <main>
-      <RootStoreProvider>
-        <QueryClientProvider client={queryClient}>
-          <Routing />
-        </QueryClientProvider>
-      </RootStoreProvider>
-    </main>
+    <RootStoreProvider>
+      <QueryClientProvider client={queryClient}>
+        <Routing />
+      </QueryClientProvider>
+    </RootStoreProvider>
   );
 }
 
