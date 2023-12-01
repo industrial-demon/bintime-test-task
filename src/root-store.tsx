@@ -22,7 +22,7 @@ export class RootStore {
   category: Category = "";
   q: string = "";
 
-  showFilters: boolean = true;
+  showFilters: boolean = false;
 
   selectedArticle: null | Article = null;
 
