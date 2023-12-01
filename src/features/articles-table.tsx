@@ -51,12 +51,13 @@ export function ArticlesTable({
                 key={`${row.publishedAt}-${idx}`}
                 onClick={() => onRowClick({ ...row, id: idx + 1 })}
               >
-                <TableCell component="th" scope="row">
-                  <img
-                    src={row.urlToImage}
-                    alt="article"
-                    className="w-[100px] h-[70px]"
-                  />
+                <TableCell>
+                  <figure className="w-[100px]">
+                    <img
+                      src={row.urlToImage}
+                      alt="article"
+                    />
+                  </figure>
                 </TableCell>
 
                 <TableCell>
