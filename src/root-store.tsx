@@ -39,7 +39,7 @@ export class RootStore {
         changeQuery: action,
         changeCategory: action,
         selectArticle: action,
-        toggleFilters: action.bound,
+        toggleFilters: action,
       },
       { autoBind: true }
     );

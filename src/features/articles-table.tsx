@@ -52,10 +52,11 @@ export function ArticlesTable({
                 onClick={() => onRowClick({ ...row, id: idx + 1 })}
               >
                 <TableCell>
-                  <figure className="w-[100px]">
+                  <figure className="w-[100px] h-[70px]">
                     <img
                       src={row.urlToImage}
                       alt="article"
+                      className="object-cover h-full w-full"
                     />
                   </figure>
                 </TableCell>

@@ -67,7 +67,7 @@ export function EnhancedToolbar() {
 
         <Button
           variant="outlined"
-          onClick={store.toggleFilters}
+          onClick={()=>store.toggleFilters()}
           startIcon={<FilterIcon />}
         >
           <span>Filters</span>
